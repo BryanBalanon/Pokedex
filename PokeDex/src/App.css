@@ -68,26 +68,34 @@
 }
 
 .card {
-  border: 1px solid #eee;
+  width: 250px;
+  height: 400px;
   border-radius: 10px;
+  border: 1px;
   margin: 10px;
-  padding: 20px;
-  width: 200px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  background-color: #121212
+
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
 
+.image-container{
+  background-color: #eee;
+  border-radius: 10px 10px 0px 0px;
+}
+
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .card-body {
   text-align: left;
+  padding: 8px;
 }
 
 .card-body h3 {
@@ -125,4 +133,9 @@ input {
 img {
   width: 100px;
   height: 100px;
+}
+
+h3{
+  text-align: center;
+  text-transform: capitalize;
 }

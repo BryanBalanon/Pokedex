@@ -62,7 +62,9 @@ export default function FilterRegion() {
                     {pokemonData.map((data) => {
                         return (
                             <div className="card" key={data.id}>
-                                <img src={data.sprites.front_default} alt={data.name} />
+                                <div className="image-container">
+                                    <img src={data.sprites.front_default} alt={data.name} />
+                                </div>
                                 <div className="card-body">
                                     <h3>{data.name}</h3>
                                     <p>Type: {data.types.map(typeInfo => typeInfo.type.name).join(', ')}</p>

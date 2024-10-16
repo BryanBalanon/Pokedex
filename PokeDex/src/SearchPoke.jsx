@@ -40,20 +40,22 @@ export default function SearchPoke() {
           />
         </label>
       </form>
-      {pokemonData.map((data) => {
-        return (
-          <div className="card-container" key={data.id}>
-            <img src={data.sprites.front_default} alt={data.name} />
-            <div className="card-body">
-                <h3>{data.name}</h3>
-                <p>Type: {data.types.map(typeInfo => typeInfo.type.name).join(', ')}</p>
-                <p>Height: {Math.round(data.height * 3.9)}"</p>
-                <p>Weight: {Math.round(data.weight / 4.3)} lbs</p>
-                <p>Abilities: {data.abilities.map((abilityInfo) => abilityInfo.ability.name).join(', ')}</p>
-            </div>  
-          </div>
-        );
-      })}
+      <div className="card-container">
+            {pokemonData.map((data) => {
+                return (
+                    <div className="card" key={data.id}>
+                        <img src={data.sprites.front_default} alt={data.name} />
+                        <div className="card-body">
+                            <h3>{data.name}</h3>
+                            <p>Type: {data.types.map(typeInfo => typeInfo.type.name).join(', ')}</p>
+                            <p>Height: {Math.round(data.height * 3.9)}"</p>
+                            <p>Weight: {Math.round(data.weight / 4.3)} lbs</p>
+                            <p>Abilities: {data.abilities.map((abilityInfo) => abilityInfo.ability.name).join(', ')}</p>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
     </div>
   );
 }

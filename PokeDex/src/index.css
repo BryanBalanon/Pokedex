@@ -28,8 +28,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/272/545/116/pokemon-go-pokemon-backgrounds-raichu-download-3840x2400-pokemon-go-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  color: #ffffff;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
